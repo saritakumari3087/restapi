@@ -17,7 +17,7 @@ public class MarsAssignmentApplication {
 		SpringApplication.run(MarsAssignmentApplication.class, args);
 	}
 	 @Bean
-	   public Docket productApi() {
+	   public Docket personApi() {
 	      return new Docket(DocumentationType.SWAGGER_2).select()
 	         .apis(RequestHandlerSelectors.basePackage("com.mars")).build();
 	   }
