@@ -30,8 +30,8 @@ public class PersonController {
 	}
 
 	@GetMapping("/person")
-	public ResponseEntity<?> listPerson() {
-		return (ResponseEntity<?>) personRepository.findAll();
+	public List<Person> listPerson() {
+		return  personRepository.findAll();
 	}
 
 	@PutMapping("/person/{id}")
